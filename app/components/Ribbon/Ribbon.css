@@ -1,0 +1,30 @@
+.ribbon {
+  background-color: rgb(34, 127, 144);
+  color: #fff;
+  padding: 0.75rem 0;
+  border-top: 3px solid rgb(191, 218, 224);
+  border-bottom: 3px solid rgb(191, 218, 224);
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  white-space: nowrap;
+  animation: scroll 30s linear infinite;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}

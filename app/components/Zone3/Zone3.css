@@ -1,0 +1,90 @@
+.zone3 {
+  background-image: url('/background_footer.png');
+  background-size: 50% auto;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  min-height: auto;
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: clamp(0.75rem, 2.5vw, 1rem);
+  padding-top: clamp(1rem, 4vw, 1rem);
+  box-sizing: border-box;
+  width: 100%;
+  min-height: clamp(300px, 45vh, 450px);
+  padding-bottom: clamp(4rem, 8vw, 6rem);
+}
+
+.top-text {
+  background: rgba(34, 127, 144, 0.7);
+  padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 3vw, 1.5rem);
+  border-radius: 16px;
+  border: 3px solid rgb(191, 218, 224);
+  color: #ffffff;
+  font-size: clamp(0.9rem, 2.2vw, 1.2rem);
+  font-weight: bold;
+  text-align: center;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.top-text p {
+  margin: 0;
+}
+
+.images-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.75rem, 3vw, 2rem);
+  max-width: 990px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.images-row img {
+  flex: 1 1 0;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  display: block;
+}
+
+.trial-button {
+  display: inline-block;
+  background: rgb(34, 127, 144);
+  color: #fff;
+  padding: clamp(0.7rem, 2vw, 1rem) clamp(1.2rem, 3vw, 2rem);
+  font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+  font-weight: bold;
+  border: 3px solid rgb(191, 218, 224);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.15s;
+  text-decoration: none;
+  text-align: center;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.trial-button:hover {
+  background: rgb(27, 102, 115);
+}
+
+.trial-button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 560px) {
+  .images-row {
+    flex-direction: column;
+  }
+  .images-row img {
+    max-width: 85%;
+  }
+}
